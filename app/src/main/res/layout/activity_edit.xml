@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="電話號碼" app:layout_constraintBottom_toTopOf="@id/edit_phone" app:layout_constraintStart_toStartOf="@id/edit_phone" />
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="桌號" app:layout_constraintBottom_toTopOf="@id/edit_table_num" app:layout_constraintStart_toStartOf="@id/edit_table_num" />
+    <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="遊戲代碼" app:layout_constraintBottom_toTopOf="@id/edit_gameID" app:layout_constraintStart_toStartOf="@id/edit_gameID" />
+    <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="遊戲桌號" app:layout_constraintBottom_toTopOf="@id/edit_web_num" app:layout_constraintStart_toStartOf="@id/edit_web_num" />
+    <Button android:id="@+id/confirm_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="確認" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/editSpeed" />
+
+    <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="跑馬顯示" app:layout_constraintBottom_toTopOf="@id/editMar" app:layout_constraintStart_toStartOf="@id/editMar" />
+    <TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="跑馬速度" app:layout_constraintBottom_toTopOf="@id/editSpeed" app:layout_constraintStart_toStartOf="@id/edit_web_num" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="300.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8.0dip"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/edit_table_num"
+        android:layout_width="300.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginTop="40.0dip"
+        android:inputType="textPersonName"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone" />
+
+    <EditText
+        android:id="@+id/edit_gameID"
+        android:layout_width="300.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginTop="40.0dip"
+        android:inputType="textPersonName"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_table_num" />
+
+    <EditText
+        android:id="@+id/edit_web_num"
+        android:layout_width="300.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginTop="40.0dip"
+        android:inputType="textPersonName"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_gameID" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editMar"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_web_num" />
+
+    <EditText
+        android:id="@+id/editSpeed"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editMar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="IP"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
